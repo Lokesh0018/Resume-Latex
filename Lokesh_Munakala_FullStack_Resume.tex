@@ -1,0 +1,175 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+
+\input{glyphtounicode}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------Section Formatting----------
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+%----------Custom Commands----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=-2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+    {\Huge \scshape Lokesh Munakala} \\ \vspace{4pt}
+    Visakhapatnam, Andhra Pradesh, India \\ \vspace{2pt}
+    \small
+    \href{tel:+917396287000}{\faPhone\ \underline{+91 7396287000}} $|$ 
+    \href{mailto:munakalalokesh222@gmail.com}{\faEnvelope\ \underline{munakalalokesh222@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/lokesh-munakala-417241311/}{\faLinkedin\ \underline{linkedin.com/lokesh-munakala}} $|$ 
+    \href{https://github.com/Lokesh0018}{\faGithub\ \underline{github.com/Lokesh0018}}
+\end{center}
+\vspace{-8pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0in, label={}, itemsep=-2pt]
+  \item \small{
+    \textbf{Languages}{: JavaScript (ES6+), TypeScript, Java, Python, SQL, HTML5, CSS3} \\
+    \textbf{Frontend Technologies}{: React.js, Tailwind CSS, Bootstrap, Redux, DOM Manipulation} \\
+    \textbf{Backend Technologies}{: Node.js, Express.js, Spring Boot, RESTful APIs, MVC Architecture} \\
+    \textbf{Databases \& DevOps}{: MySQL, PostgreSQL, MongoDB, Docker, AWS (EC2, S3), CI/CD, Git, GitHub} \\
+    \textbf{Core Concepts}{: Full Stack Development, System Architecture, Authentication (JWT, OAuth), Performance Optimization, API Integration}
+  }
+\end{itemize}
+\vspace{-6pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Raghu Institute of Technology}{Sep 2023 -- May 2026}
+    {B.Tech in Computer Science and Engineering $|$ CGPA: 8.6/10}{Visakhapatnam, India}
+  
+  \resumeSubheading
+    {Government Polytechnic College}{Sep 2020 -- Mar 2023}
+    {Diploma in Computer Engineering $|$ GPA: 7.7/10}{Anakapalli, India}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Tilicho Labs}{Jan 2026 -- Jun 2026}
+    {Full Stack Developer Intern}{Remote}
+    \resumeItemListStart
+      \resumeItem{Spearheaded end-to-end development of feature-rich web applications utilizing the MERN stack (MongoDB, Express, React, Node.js), improving user retention by 20\%.}
+      \resumeItem{Bridged frontend and backend operations by integrating React.js UI components with custom RESTful APIs, reducing data transmission overhead by 30\%.}
+      \resumeItem{Implemented comprehensive automated testing frameworks across the stack, ensuring robust deployments and minimizing production bugs.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Visakhapatnam Port Authority}{Dec 2022 -- Jun 2023}
+    {Software Development Intern}{Remote}
+    \resumeItemListStart
+      \resumeItem{Developed a cohesive internal employee portal, seamlessly linking a responsive HTML/CSS interface with robust backend database services.}
+      \resumeItem{Designed relational SQL schemas and developed full CRUD functionality, optimizing data flow and enhancing organizational reporting efficiency.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Result Scale -- Comprehensive SaaS Application} $|$ \emph{React.js, Node.js, MongoDB, Firebase}}{\href{https://github.com/Lokesh0018/Result-Scale}{\underline{GitHub}} $|$ \href{https://resultscale.web.app/}{\underline{Live}}}
+    \resumeItemListStart
+      \resumeItem{Engineered a complete multi-tenant SaaS application, utilizing React.js for an intuitive frontend interface and Node.js for scalable backend processing.}
+      \resumeItem{Successfully integrated cross-platform database sharding using MongoDB and Firestore, maintaining high performance under heavy concurrent usage.}
+      \resumeItem{Architected full-stack security implementations including OTP verification and stateful Role-Based Access Control (RBAC).}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Hall Ticket Generator API System} $|$ \emph{Spring Boot, React.js, MySQL, REST}}{\href{https://github.com/Lokesh0018/HT-Generator}{\underline{GitHub}}}
+    \resumeItemListStart
+      \resumeItem{Constructed a cohesive full-stack platform by coupling a modern React.js dashboard with a highly secure Spring Boot enterprise backend.}
+      \resumeItem{Engineered reliable REST APIs connected to a MySQL database, enabling dynamic server-side PDF generation and secure client-side delivery.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Git Intel -- Analytics Platform} $|$ \emph{MERN Stack, GitHub API Integration}}{\href{https://github.com/Lokesh0018/Git-Intel}{\underline{GitHub}}}
+    \resumeItemListStart
+      \resumeItem{Developed an end-to-end data processing platform linking a highly interactive React UI with an Express proxy server.}
+      \resumeItem{Streamlined external API data aggregation, executing complex backend analytics and displaying the results seamlessly via real-time frontend dashboards.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0in, label={}, itemsep=-2pt]
+  \item \small{
+    \begin{tabularx}{1.0\textwidth}{X r @{\hspace{15pt}} X r}
+       \textbf{AWS Academy -- Cloud Architecting} & \href{https://drive.google.com/file/d/1d9a3VXHNnSKIglUJS4qZtpmTMlvMrxpJ/view}{\underline{View}} &
+       \textbf{NPTEL -- Java (Elite+Silver)} & \href{https://drive.google.com/file/d/17bU-jNJ1CVffs1Oh0_z72s0FAAJgFuZg/view}{\underline{View}} \\
+       
+       \textbf{Tilicho Labs -- Internship} & \href{https://drive.google.com/file/d/1tOYjFC4XcC63vuUnEdpE32q-bJwVsBFO/view?usp=sharing}{\underline{View}} &
+       \textbf{NPTEL -- Python (Elite+Silver)} & \href{https://drive.google.com/file/d/1Gyxsu8hZ1pKwy_BasZgqwoS7xTZe5IBZ/view}{\underline{View}} \\
+    \end{tabularx}
+  }
+\end{itemize}
+
+\end{document}
